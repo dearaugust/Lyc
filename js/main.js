@@ -3,12 +3,12 @@ window.onload=function(){
 	var show = document.getElementById('nowTime')
 	var time = function(){
 		var date = new Date();
-		let year = date.getFullYear()
-		let month = date.getUTCMonth()
-		let today = date.getDate()
-		let hour = date.getHours();
-		let minute = date.getMinutes();
-		let second = date.getSeconds();
+		var year = date.getFullYear()
+		var month = date.getUTCMonth()
+		var today = date.getDate()
+		var hour = date.getHours();
+		var minute = date.getMinutes();
+		var second = date.getSeconds();
 		if(hour<10){
 			hour = '0'+hour;
 		}
@@ -24,7 +24,7 @@ window.onload=function(){
 	var t = setInterval(time,1000);
 
 	$("nav button").click(function(){
-        let num = $(this).index()
+        var num = $(this).index()
         $(this).addClass('active')
         $(this).siblings().removeClass('active')
         $("section>div").eq(num).removeClass("none");
