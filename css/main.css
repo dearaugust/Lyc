@@ -1,0 +1,133 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/*html5*/
+/*article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block};*/
+
+.clearfix:before,
+.clearfix:after{
+	content: " "; /*内容为“ ”就是一个英文的句号而已。也可以不写。*/
+	display: block;   /*加入的这个元素转换为块级元素。*/
+	clear: both;     /*清除左右两边浮动。*/
+	visibility: hidden; /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+	line-height: 0;    /*行高为0；*/
+	height: 0;     /*高度为0；*/
+	font-size:0;    /*字体大小为0；*/
+}
+.clearfix { *zoom:1;}   /*这是针对于IE6的，因为IE6不支持:after伪类，让IE6的元素可以清除浮动来包裹内部元素。*/
+
+ol, ul ,li{list-style: none;}
+
+.wrap {
+
+}
+
+header {
+	background-color: #336699;
+	width: 100vw;
+	height: 10vh;
+	font-size: 40px;
+	text-align: center;
+	padding-left: 100px;
+}
+header h1 {
+	line-height: 10vh;
+	color: #fff;
+}
+
+.main {
+	display: flex;
+}
+
+aside {
+	background-color: #99cccc;
+	width: 100px;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+aside button {
+	margin: 10px;
+}
+.navHover{
+	position: relative;
+	padding: 10px;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+.navHover:hover {
+	color: #369;
+}
+.aHover{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 10px;
+	background-color: #4178be;
+	transition:background 1s;
+}
+
+section {
+	background-color: #fff;
+	padding: 10px;
+	flex-grow: 5;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+}
+nav {
+	padding-bottom:5px;
+}
+section>div {
+	flex-grow: 10;
+	flex-direction: column;
+	position: relative;
+}
+.img {
+	overflow: hidden;
+}
+.img img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.pano {
+	display: flex;
+}
+iframe {
+	width: 100%;
+	height: 100%;
+	flex-grow: 1;
+}
+.pano span {
+	position: absolute;
+	color: #fff;
+	top: 10px;
+	right: 10px;
+	background-color: #369;
+	border-radius: 10px;
+	padding: 10px;
+}
+.none {
+	display: none;
+}
+.btn-default.active {
+	/*background-color: #369;*/
+}

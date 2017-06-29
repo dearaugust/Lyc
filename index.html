@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/main.js"></script>
+</head>
+<body>
+  <div class="wrap">
+	<header>
+		<h1>示例</h1>
+	</header>
+	<div class="main">
+		<aside>
+			<ul>
+				<li class="navHover">导航一<span></span></li> 
+				<li class="navHover">导航二<span></span></li>
+				<li class="navHover">导航三<span></span></li>
+				<li class="navHover">导航四<span></span></li>
+				<li class="navHover">导航五<span></span></li>
+				<li class="navHover">导航六<span></span></li>
+			</ul>
+		</aside>
+		<section>
+			<nav>
+				<button type="button" class="btn btn-default btn_1">设计图</button>
+				<button type="button" class="active btn btn-default btn_1">示例一</button>
+				<button type="button" class="btn btn-default btn_1">示例二</button>
+			</nav>
+			<div class="img none">
+				<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1498643335437&di=cdd92ea493ebd3b25a392deb6aa52947&imgtype=0&src=http%3A%2F%2Fpic.shejiben.com%2Fcase%2F1212%2F01%2F20121201_f04d3abca20eef075ad9SbQdjvUct3Nl.jpg" alt="">
+			</div>
+			<div class="pano">
+				<iframe id="iframepage_1" src="https://dearaugust.github.io/Ddxx" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				<span id="nowTime"></span>
+			</div>
+			<div class="pano none">
+				<iframe id="iframepage_2" src="https://dearaugust.github.io/Zyy" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			</div>
+		</section>
+	</div>
+  </div>
+  <!-- <script>
+  	function iFrameHeight() {   
+		var ifm= document.getElementById("iframepage");   
+		var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
+		if(ifm != null && subWeb != null) {
+		   ifm.height = subWeb.body.scrollHeight;
+		   ifm.width = subWeb.body.scrollWidth;
+		}   
+	}
+  </script> -->
+</body>
+</html>
