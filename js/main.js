@@ -2,7 +2,7 @@ window.onload=function(){
 
 	var show = document.getElementById('nowTime')
 	var time = function(){
-		let date = new Date();
+		var date = new Date();
 		let year = date.getFullYear()
 		let month = date.getUTCMonth()
 		let today = date.getDate()
